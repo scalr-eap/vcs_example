@@ -7,7 +7,7 @@ data "aws_ami" "the_ami" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-16.04-amd64-server-*"]
   }
 
   filter {
@@ -15,7 +15,7 @@ data "aws_ami" "the_ami" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["670025224396"] # Canonical
 }
 
 resource "aws_instance" "scalr" {
