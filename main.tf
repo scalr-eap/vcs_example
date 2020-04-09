@@ -20,7 +20,7 @@ data "aws_ami" "the_ami" {
 
 resource "aws_instance" "scalr" {
   ami                    = "data.aws_ami.the_ami.id"
-  instance_type          = "t2.nano"
+  instance_type          = "t2.small"
   subnet_id              = "subnet-0ebb1058ad727cfdb"
   vpc_security_group_ids = ["sg-0880cfdc546b123ba"]
   key_name               = "ryan"
