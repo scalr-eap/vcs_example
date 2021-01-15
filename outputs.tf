@@ -9,6 +9,6 @@ output "public_ip" {
 }
 
 output "private_ip" {
-  description = "Private IP"
+  description = "The Private IP"
   value       = aws_instance.scalr.private_ip
 }
